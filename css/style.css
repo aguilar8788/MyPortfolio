@@ -3,3 +3,99 @@ body {
     background-image: url("/images/newsize.png");
 }
 
+.portfolio {
+    margin-top:190px;
+    margin-left:110px;
+    width: 280px;
+    height:130px;
+    background-color: white;
+    transform: rotate(160deg);
+
+}
+
+.blog {
+    margin-right: 90px;
+    margin-top: 190px;
+    width: 280px;
+    height:130px;
+    background-color: white;
+    transform: rotate(20deg);
+}
+
+.about {
+    margin-left:20px;
+    margin-top:-15px;
+    width: 280px;
+    height:130px;
+    background-color: white;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.portimage:hover {
+    box-shadow: -10px -10px 30px 5px #000000;
+    cursor: pointer;
+}
+
+.blogimage:hover {
+    box-shadow: 10px 1px 30px 5px #000000;
+    cursor: pointer;
+
+}
+
+.aboutImage:hover {
+    width: 105%;
+    height: 110%;
+    box-shadow: 10px 10px 30px 5px #000000;
+    cursor: pointer;
+    transition-duration: 0.30s
+}
+
+.blogImage:hover {
+    width: 105%;
+    height: 110%;
+    box-shadow: 10px 10px 30px 5px #000000;
+    cursor: pointer;
+    transition-duration: 0.30s
+}
+
+.portfolioImage {
+    transform: rotate(180deg);
+}
+
+.portfolioImage:hover {
+    width: 105%;
+    height: 110%;
+    cursor: pointer;
+    transition-duration: 0.30s
+}
+
+.social {
+    margin-top:250px;
+    margin-right:200px;
+    float:right;
+}
+
+.social li {
+    padding:10px;
+    list-style: none;
+}
+
+.social a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.social a:hover {
+    font-size: 18px;
+}
+
+.icon {
+    margin-right:5px;
+}

@@ -1,6 +1,19 @@
-body {
-    background-color: #81c784;
+body{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+
+.splashContainer {
+    margin-top:30px;
     background-image: url("/images/newsize.png");
+    height:98vh;
+    width:1420px;
 }
 
 .portfolio {
@@ -99,3 +112,91 @@ body {
 .icon {
     margin-right:5px;
 }
+
+header {
+    margin-left:-16px;
+    margin-top:-10px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    height:60px;
+    background-color:#66BB6A;
+    box-shadow:1px 1px 1px black;
+}
+
+.logo {
+ margin-left:-145px;
+}
+
+.homelink:hover {
+    cursor:pointer;
+}
+
+.navigation {
+
+}
+
+.navigation ul {
+    display:flex;
+    flex-direction: row;
+}
+
+.navigation li {
+    list-style: none;
+    padding:10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.navigation a:hover {
+    text-decoration: none;
+    color: #E6E6E6;
+}
+
+
+.aboutContainer {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height: 100%;
+}
+
+.aboutContent {
+    width:65vw;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+
+}
+
+.work ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:90vw;
+    height:87vh;
+    overflow: auto;
+}
+
+.work li{
+    padding: 30px;
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+

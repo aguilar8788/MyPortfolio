@@ -10,8 +10,13 @@ app.factory('dataTransfer', function(){
     }
 });
 
+app.controller("IndexController", function($scope) {
+    $scope.view.headerShow = true;
+})
+
 app.controller("SplashController", function ($scope, $http, dataTransfer, $stateParams) {
     $scope.splash = {};
+    $scope.splash.backgroundImage = true;
     $scope.splash.test = "Splash";
 })
 

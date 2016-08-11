@@ -1,12 +1,11 @@
 
-
-<div class="work">
-    <ul>
-        <li><img src="../images/window.png" width="350" height="250"/><p>info about site</p></li>
-
-        <li><img src="../images/window.png" width="350" height="250"/><p>info about site</p></li>
-        <li><img src="../images/window.png" width="350" height="250"/><p>info about site</p></li>
-        <li><img src="../images/window.png" width="350" height="250"/><p>info about site</p></li>
-        <li><img src="../images/window.png" width="350" height="250"/><p>info about site</p></li>
+<div class="portContainer">
+<div ng-repeat="data in portfolio.work">
+    <ul class="work">
+        <a href="{{ data.url }}"  target="_blank" class="workLink"><li><img class="thumbnail" src="{{ data.thumbnail }}" width="400" height="230"></li></a>
+        <li><h3>{{ data.title }}</h3></li>
+        <li>{{ data.description }}</li>
     </ul>
 </div>
+</div>
+

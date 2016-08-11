@@ -3,44 +3,43 @@ body{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    width: 100%;
+    /*overflow-x: hidden;*/
+    /*overflow-y: hidden;*/
+
 }
 
 
 .splashContainer {
+
     margin-top:30px;
     background-image: url("/images/newsize.png");
     height:98vh;
     width:1420px;
+
 }
 
 .portfolio {
-    margin-top:190px;
-    margin-left:110px;
+    margin-top:170px;
+    margin-left:70px;
     width: 280px;
     height:130px;
-    background-color: white;
     transform: rotate(160deg);
 
 }
 
 .blog {
-    margin-right: 90px;
-    margin-top: 190px;
+    margin-right: 70px;
+    margin-top: 225px;
     width: 280px;
     height:130px;
-    background-color: white;
     transform: rotate(20deg);
 }
 
 .about {
-    margin-left:20px;
-    margin-top:-15px;
+    margin-left:50px;
+    margin-top:-10px;
     width: 280px;
-    height:130px;
-    background-color: white;
+    height:auto;
 }
 
 .thumbnails {
@@ -51,42 +50,49 @@ body{
 
 }
 
-.portimage:hover {
-    box-shadow: -10px -10px 30px 5px #000000;
-    cursor: pointer;
+
+
+.blogImage {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.blogimage:hover {
-    box-shadow: 10px 1px 30px 5px #000000;
-    cursor: pointer;
 
+.blogImage:hover {
+    width: 100%;
+    height: 90%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
+    cursor: pointer;
+    transition-duration: 0.30s
+}
+
+.aboutImage {
+    box-shadow: 0 1px 1px rgba(0,0,0,1), 0 1px 1px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .aboutImage:hover {
-    width: 105%;
-    height: 110%;
-    box-shadow: 10px 10px 30px 5px #000000;
+    width: 100%;
+    height:120px;
+    box-shadow: 0 14px 28px rgba(0,0,0,1), 0 10px 10px rgba(0,0,0,0.22);
     cursor: pointer;
     transition-duration: 0.30s
 }
 
-.blogImage:hover {
-    width: 105%;
-    height: 110%;
-    box-shadow: 10px 10px 30px 5px #000000;
-    cursor: pointer;
-    transition-duration: 0.30s
-}
+
 
 .portfolioImage {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     transform: rotate(180deg);
 }
 
 .portfolioImage:hover {
-    width: 105%;
-    height: 110%;
+    width: 100%;
+    height: 90%;
     cursor: pointer;
-    transition-duration: 0.30s
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .social {
@@ -114,16 +120,15 @@ body{
 }
 
 header {
-    margin-left:-16px;
-    margin-top:-10px;
+    margin-top:-8px;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-    width:100%;
+    width:101%;
     height:60px;
     background-color:#66BB6A;
-    box-shadow:1px 1px 1px black;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .logo {
@@ -166,37 +171,56 @@ header {
     justify-content:center;
     align-items:center;
     width:100%;
-    height: 100%;
+    height:90vh;
 }
 
 .aboutContent {
+    font-size: 18px;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     width:65vw;
 }
 
-.work {
-    display: flex;
+.portContainer {
+    box-sizing: border-box;
+    width:100vw;
+    display:flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     flex-wrap:wrap;
 
 }
 
-.work ul{
+.work {
+    margin:10px;
+    padding:10px;
+    width:35vw;
+
+}
+
+.work li {
     display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    width:90vw;
-    height:87vh;
-    overflow: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
 }
 
-.work li{
-    padding: 30px;
-    list-style: none;
+.thumbnail {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.thumbnail:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
+
 

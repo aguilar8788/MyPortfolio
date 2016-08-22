@@ -11,9 +11,6 @@ app.factory('dataTransfer', function(){
 });
 
 app.controller("IndexController", function($scope, $http) {
-    $http.get("https://petesportfolioserver.herokuapp.com/work").then(function(data) {
-        console.log(data.data);
-    })
 
 })
 
@@ -21,6 +18,9 @@ app.controller("SplashController", function ($scope, $http, dataTransfer, $state
     $scope.splash = {};
     $scope.splash.backgroundImage = true;
     $scope.splash.test = "Splash";
+    $http.get("https://petesportfolioserver.herokuapp.com/work").then(function(data) {
+        console.log(data.data);
+    })
 })
 
 app.controller("AboutController", function ($scope, $http, dataTransfer, $stateParams) {

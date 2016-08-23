@@ -15,8 +15,35 @@ body{
     background-image: url("/images/newsize.png");
     height:98vh;
     width:1420px;
+}
+
+.mobileContent {
+    display:none;
+}
+
+@media only screen
+  and (min-device-width: 230px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+   .splashContainer {
+          display:none;
+          margin-top:30px;
+          background-image: url("/");
+          height:98vh;
+          width:1420px;
+      }
+
+    .mobileContent {
+        display: flex;
+    }
+
 
 }
+
+
+
+
 
 .portfolio {
     margin-top:170px;
@@ -168,7 +195,6 @@ header {
 .aboutContainer {
     display:flex;
     flex-direction:column;
-
     width:100%;
     height:90vh;
 }

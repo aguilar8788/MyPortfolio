@@ -11,16 +11,31 @@ app.factory('dataTransfer', function(){
 });
 
 app.controller("IndexController", function($scope, $http) {
+    var url = function() {
+            if($location.url() == "/") {
+                console.log("index")
+                $scope.hidenav = true;
+            };
+        }
 
+        url();
 })
 
-app.controller("SplashController", function ($scope, $http, dataTransfer, $stateParams) {
+app.controller("SplashController", function ($scope, $http, dataTransfer, $stateParams, $location) {
     $scope.splash = {};
     $scope.splash.backgroundImage = true;
     $scope.splash.test = "Splash";
     $http.get("https://petesportfolioserver.herokuapp.com/work").then(function(data) {
         console.log(data.data);
     })
+    var url = function() {
+        if($location.url() == "/") {
+            console.log("index")
+            $scope.hidenav = true;
+        };
+    }
+
+    url();
 })
 
 app.controller("AboutController", function ($scope, $http, dataTransfer, $stateParams) {

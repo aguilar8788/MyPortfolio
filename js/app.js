@@ -26,3 +26,5 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         })
     $locationProvider.html5Mode(true);
 })
+
+window.addEventListener("hashchange", function() { scrollBy(0, -50) })

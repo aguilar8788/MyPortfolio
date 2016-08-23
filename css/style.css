@@ -9,6 +9,19 @@ body{
 }
 
 
+header {
+    margin-top:-8px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    width:101%;
+    height:60px;
+    background-color:#66BB6A;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
 .splashContainer {
 
     margin-top:30px;
@@ -38,6 +51,13 @@ body{
         display: flex;
     }
 
+    .navigation {
+        display:none;
+    }
+
+    header {
+        display: none;
+    }
 
 }
 
@@ -146,17 +166,6 @@ body{
     margin-right:5px;
 }
 
-header {
-    margin-top:-8px;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    width:101%;
-    height:60px;
-    background-color:#66BB6A;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
 
 .logo {
  margin-left:-145px;
@@ -186,11 +195,28 @@ header {
     font-size: 20px;
 }
 
+
 .navigation a:hover {
     text-decoration: none;
     color: #E6E6E6;
 }
 
+.navigationMobile a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 20px;
+}
+
+.navigationMobile li {
+    margin-left: -150px;
+    list-style: none;
+    padding:10px;
+}
+
+.navigationMobile a:hover {
+    text-decoration: none;
+    color: #E6E6E6;
+}
 
 .aboutContainer {
     display:flex;

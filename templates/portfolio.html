@@ -1,21 +1,19 @@
 <div class="mobileContent">
-
     <div class="navigationMobile">
         <li><a ui-sref="about">about</a></li>
         <li><a ui-sref="portfolio">work</a></li>
         <li><a ui-sref="blog">blog</a></li>
     </div>
-
 </div>
 
 <div class="portContainer">
-<div ng-repeat="data in portfolio.work">
-    <ul class="work">
-        <a href="{{ data.url }}"  target="_blank" class="workLink"><li><img class="thumbnail" src="{{ data.thumbnail }}" width="400" height="230"></li></a>
-        <li><h2>{{ data.title }}</h2></li>
-        <li>{{ data.description }}</li>
-    </ul>
-</div>
+    <div ng-repeat="data in portfolio.work">
+        <ul class="work">
+            <a href="{{ data.url }}"  target="_blank" class="workLink"><li><img class="thumbnail" src="{{ data.thumbnail }}" width="400" height="230"></li></a>
+            <li><h2>{{ data.title }}</h2></li>
+            <li>{{ data.description }}</li>
+        </ul>
+    </div>
 </div>
 
 

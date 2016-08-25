@@ -24,6 +24,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             templateUrl: "/templates/blog.html",
             controller: "BlogController"
         })
+
     $locationProvider.html5Mode(true);
 })
 

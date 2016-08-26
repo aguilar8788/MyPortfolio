@@ -24,6 +24,11 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             templateUrl: "/templates/blog.html",
             controller: "BlogController"
         })
+        .state("admin", {
+                    url: "/admin",
+                    templateUrl: "/templates/admin.html",
+                    controller: "AdminController"
+                })
 
     $locationProvider.html5Mode(true);
 })

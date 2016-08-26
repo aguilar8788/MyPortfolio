@@ -284,4 +284,8 @@ h1, h2, h3, h4 {
     font-family: 'Amatic SC', cursive;
 }
 
+input {
+    display:block;
+}
+
 /*font-family: 'Amatic SC', cursive;*/

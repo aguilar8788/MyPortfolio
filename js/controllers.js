@@ -22,3 +22,20 @@ app.controller("PortfolioController", function($scope, $http, dataTransfer, $sta
 app.controller("BlogController", function($scope, $http, dataTransfer, $stateParams) {
 
 })
+
+app.controller("AdminController", function($scope, $http, dataTransfer, $stateParams) {
+
+
+
+    $scope.formSubmit = function() {
+        var body = {
+           title: $scope.post.title,
+           url: $scope.post.url,
+           thumbnail: $scope.post.thumbnail,
+           description: $scope.post.description
+        }
+        $http.post("https://petesportfolioserver.herokuapp.com/work", body);
+    }
+})
+
+

@@ -1,0 +1,18 @@
+<form ng-model='Form' ng-submit="formSubmit()">
+    <label for="title">Title</label>
+    <input type="text" name="title" ng-model="post.title"/>
+    <label for="url">URL</label>
+    <input type="text" name="url" ng-model="post.url"/>
+    <label for="thumbnail">Thumbnail</label>
+    <input type="text" name="thumbnail" ng-model="post.thumbnail"/>
+    <label for="desc">Description</label>
+    <textarea ng-model="post.description" name="desc"></textarea>
+    <button type="submit" class="postBtn">Submit Post</button>
+</form>
+
+<!--{-->
+<!--"title": "Reads",-->
+<!--"url": "https://galvanize-reads-paguilar.herokuapp.com/",-->
+<!--"thumbnail": "https://scontent-sjc2-1.xx.fbcdn.net/t31.0-8/s960x960/14066220_1104959596238029_4973464511836170019_o.jpg",-->
+<!--"description": "Galvanize reads is a web app that allows users to create a collection of books and authors by adding them to a database. You can also edit and delete your submissions. The app demonstrates a CRUD based application."-->
+<!--}-->

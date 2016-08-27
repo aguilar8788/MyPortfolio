@@ -29,10 +29,10 @@ app.controller("AdminController", function($scope, $http, dataTransfer, $statePa
 
     $scope.formSubmit = function() {
         var body = {
-           title: $scope.post.title,
-           url: $scope.post.url,
-           thumbnail: $scope.post.thumbnail,
-           description: $scope.post.description
+           title: $scope.title,
+           url: $scope.url,
+           thumbnail: $scope.thumbnail,
+           description: $scope.description
         }
         $http.post("https://petesportfolioserver.herokuapp.com/work", body);
     }

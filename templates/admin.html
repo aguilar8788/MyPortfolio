@@ -10,6 +10,13 @@
     <button type="submit" class="postBtn">Submit Post</button>
 </form>
 
+
+<div ng-repeat="data in portfolio">
+    <ul >
+        <li><a ui-sref="edit({id: data.id})">{{ data.title }}</a></li>
+        <li ng-click="deletePost(data.id)">Delete</li>
+    </ul>
+</div>
 <!--{-->
 <!--"title": "Reads",-->
 <!--"url": "https://galvanize-reads-paguilar.herokuapp.com/",-->

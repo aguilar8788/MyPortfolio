@@ -29,6 +29,11 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
                     templateUrl: "/templates/admin.html",
                     controller: "AdminController"
                 })
+         .state("edit", {
+                             url: "/:id",
+                             templateUrl: "/templates/editpost.html",
+                             controller: "EditController"
+                         })
 
     $locationProvider.html5Mode(true);
 })
